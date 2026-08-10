@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.result,
+.summary {
+  padding: 2rem;
+  width: 350px;
+}
+
+.result {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 0 0 30px 30px;
+  color: hsl(241, 100%, 89%);
+  text-align: center;
+}
+
+.result h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+
+.score {
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem auto;
+}
+
+.score p:first-child {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: hsl(0, 0%, 100%);
+}
+
+.result h2 {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 0.5rem;
+}
+
+.summary {
+  border-radius: 0 0 30px 30px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.summary h2 {
+  font-size: 1.2rem;
+  color: hsl(224, 30%, 27%);
+  margin-bottom: 1rem;
+}
+
+.summary ul {
+  list-style: none;
+}
+
+.summary li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 0.8rem;
+}
+
+.summary li img {
+  margin-right: 0.7rem;
+}
+
+.summary li p:first-of-type {
+  flex-grow: 1;
+  font-weight: 500;
+  color: hsl(224, 30%, 27%);
+}
+
+.summary li p:last-of-type {
+  font-weight: 800;
+  color: hsl(224, 30%, 27%);
+}
+
+.summary li p:last-of-type span {
+  color: hsla(224, 30%, 27%, 0.5);
+}
+
+.summary li:nth-child(1) {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+.summary li:nth-child(1) p:first-of-type {
+  color: hsl(0, 100%, 67%);
+}
+
+.summary li:nth-child(2) {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+.summary li:nth-child(2) p:first-of-type {
+  color: hsl(39, 100%, 56%);
+}
+
+.summary li:nth-child(3) {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+.summary li:nth-child(3) p:first-of-type {
+  color: hsl(166, 100%, 37%);
+}
+
+.summary li:nth-child(4) {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+.summary li:nth-child(4) p:first-of-type {
+  color: hsl(234, 85%, 45%);
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  border: none;
+  border-radius: 30px;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media (min-width: 600px) {
+  body {
+    background-color: hsl(221, 100%, 96%);
+  }
+
+  .card {
+    display: flex;
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.15);
+    border-radius: 30px;
+    overflow: hidden;
+  }
+
+  .result,
+  .summary {
+    width: 300px;
+  }
+
+  .result {
+    border-radius: 30px;
+  }
+}
